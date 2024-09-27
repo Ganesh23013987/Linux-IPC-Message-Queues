@@ -92,14 +92,26 @@ int main()
 ## OUTPUT
 
 ```
-localhost:~# gcc -o reader reader.c
 localhost:~# ./writer
-hello
-Write Data : Data send is : hello
+Write Data : hello
+Data send is : hello os
+
 localhost:~# ./reader
-Data Received is : hello
+Data Received is : hello os
 ```
 
+```
+localhost:~# ipcs
+ 
+------ Message Queues --------
+key        msqid      owner      perms      used-bytes   messages
+ 
+------ Shared Memory Segments --------
+key        shmid      owner      perms      bytes      nattch     status
+ 
+------ Semaphore Arrays --------
+key        semid      owner      perms      nsems
+```
 
 
 # RESULT:
